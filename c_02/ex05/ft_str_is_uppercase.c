@@ -6,24 +6,22 @@
 /*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/19 18:55:35 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/19 18:56:05 by fverge           ###   ########.fr       */
+/*   Updated: 2023/06/19 19:11:41 by fverge           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_uppercase(char *str)
 {
 	int	i;
-	int	check;
 
 	i = 0;
-	check = 1;
 	if (str[0] == '\0')
 		return (1);
 	while (str[i] != '\0')
 	{
 		if (!((str[i] >= 'A' && str[i] <= 'Z')))
-			check = 0;
+			return (0);
 		i++;
 	}
-	return (check);
+	return (1);
 }
