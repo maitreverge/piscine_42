@@ -6,7 +6,7 @@
 /*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 11:33:31 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/23 21:17:23 by fverge           ###   ########.fr       */
+/*   Updated: 2023/06/23 16:31:48 by fverge           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,9 +76,9 @@ void	ft_putnbr_base(int nbr, char *base)
 			ft_putchar('-');
 			nbr = nbr * (-1);
 		}
-		if (nbr < len_base)
+		if (nbr< len_base)
 			ft_putchar(base[nbr]);
-		if (nbr >= len_base)
+		if (nbr>= len_base)
 		{
 			ft_putnbr_base(nbr / len_base, base);
 			ft_putnbr_base(nbr % len_base, base);
