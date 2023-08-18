@@ -11,7 +11,7 @@ int	main(void)
 
 ///////////////////////////////////////////////////////////////////////
 
-	For better pointer arythmetic understanding, you could also have declared pointer to those value such as 
+	For better pointer arythmetic understanding, you could also have declared pointers to thoses values such as 
 
 	int		*pointer_a;
 	int		*pointer_b;
@@ -23,8 +23,8 @@ int	main(void)
 
 	ft_swap(pointer_a, pointer_b);
 
-	As I did it, you can plug the adress of the value straight in the function,
-	which is exactly the same....... as pointer as just a variable containing an adress.
+	As I did it, you can plug the adress of the values straight in the function,
+	which is exactly the same....... as pointers as just a variables containing adresses.
 
 	I highly encourage you to use pointer declaration in the first place to get used to it if you're not !
 
