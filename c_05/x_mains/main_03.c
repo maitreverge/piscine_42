@@ -3,10 +3,14 @@
 
 int ft_recursive_power(int nb, int power);
 
-int	main(int argc, char **argv)
+int	main(int ac, char **av)
 {
-	int nb = atoi(argv[1]);
-	int power = atoi(argv[2]);
-	printf("%i", ft_recursive_power(nb, power));
-	return (0);
+	if (ac == 3)
+	{
+		printf("%s power %s = %i\n", av[1], av[2], ft_recursive_power(atoi(av[1]), atoi(av[2])));
+	}
+	else
+	{
+		printf("Usage :		<your_program_name>		<number>	<power>\n\nExample :	a.out 4 5\n");
+	}
 }
