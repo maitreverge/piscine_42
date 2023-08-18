@@ -5,24 +5,24 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n);
 
 int	main(void)
 {
-	char s1[] = "Salut bande de salope";
-	char s2[] = "Salut bande de salope";
-	unsigned int n1 = 21;
+	char s1[] = "Salut bande de coquines";
+	char s2[] = "Salut bande de coquines";
+	unsigned int n1 = 22;
 
-	char s3[] = "Salut bande de salopes";
-	char s4[] = "Salut bande dE salopes";
+	char s3[] = "Salut bande de coquines";
+	char s4[] = "Salut bande dE coquines";
 	unsigned int n2 = 13;
 
-	char s5[] = "Salut bande d2 salopes";
-	char s6[] = "Salut bande de salopes";
+	char s5[] = "Salut bande d2 coquines";
+	char s6[] = "Salut bande de coquines";
 	unsigned int n3 = 14;
 
-	char s7[] = "Salut bande de salope";
-	char s8[] = "Salut bande de salopes";
-	unsigned int n4 = 23;
+	char s7[] = "Salut bande de coquine";
+	char s8[] = "Salut bande de coquines";
+	unsigned int n4 = 24;
 	
-	char s9[] = "Salut bande de salopes";
-	char s10[] = "Salut bande de salope";
+	char s9[] = "Salut bande de coquines";
+	char s10[] = "Salut bande de coquine";
 	unsigned int n5 = 23;
 	
 	

@@ -5,20 +5,20 @@ int	ft_strcmp(char *s1, char *s2);
 
 int	main(void)
 {
-	char s1[] = "Salut bande de salope";
-	char s2[] = "Salut bande de salope";
+	char s1[] = "Salut bande de coquines";
+	char s2[] = "Salut bande de coquines";
 
-	char s3[] = "Salut bande de salopes";
-	char s4[] = "Salut bande dE salopes";
+	char s3[] = "Salut bande de coquines";
+	char s4[] = "Salut bande dE coquines";
 
-	char s5[] = "Salut bande d2 salopes";
-	char s6[] = "Salut bande de salopes";
+	char s5[] = "Salut bande d2 coquines";
+	char s6[] = "Salut bande de coquines";
 
-	char s7[] = "Salut bande de salope";
-	char s8[] = "Salut bande de salopes";
+	char s7[] = "Salut bande de coquine";
+	char s8[] = "Salut bande de coquines";
 	
-	char s9[] = "Salut bande de salopes";
-	char s10[] = "Salut bande de salope";
+	char s9[] = "Salut bande de coquines";
+	char s10[] = "Salut bande de coquine";
 	
 	
 	printf("Real strcmp = %i\nft_strcmp = %i\n", strcmp(s1, s2), ft_strcmp(s1, s2));
