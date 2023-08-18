@@ -7,9 +7,22 @@ int	main(void)
 	int a = 12;
 	int b = 5;
 
-	printf("a = %i b = %i\n", a, b);
+	printf("a = %i b = %i before function\n", a, b);
+	printf("\n----------\n\n");
+
+	  //////////////////////////////////////////
+	 //         FUNCTION    EXECUTION        //
+	//////////////////////////////////////////
+
+
+				ft_ultimate_div_mod(&a, &b);
+								
+
+	  //////////////////////////////////////////
+	 //         END    EXECUTION             //
+	//////////////////////////////////////////
 	
-	ft_ultimate_div_mod(&a, &b);
-	printf("a = %i b = %i\n", a, b);
+	
+	printf("a = %i b = %i after function\n", a, b);
 	
 }

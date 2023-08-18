@@ -6,8 +6,22 @@ int	main(void)
 {
 	int i = 21;
 
-	printf("\n%i\n", i);
+	printf("Value of i before function : %i\n", i);
+	printf("\n----------\n\n");
 
-	ft_ft(&i);
-	printf("%i", i);
+
+	  //////////////////////////////////////////
+	 //         FUNCTION    EXECUTION        //
+	//////////////////////////////////////////
+
+
+	                 ft_ft(&i);
+
+
+	  //////////////////////////////////////////
+	 //         END    EXECUTION             //
+	//////////////////////////////////////////
+
+
+	printf("Value of i after function  : %i\n", i);
 }
