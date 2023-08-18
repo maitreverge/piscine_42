@@ -4,6 +4,7 @@ void	ft_putchar(char c);
 
 int	main(void)
 {
+	printf("Expected Result :\nBonjour\n:)\n--------------------\nResult :\n");
 	ft_putchar('B');
 	ft_putchar('o');
 	ft_putchar('n');

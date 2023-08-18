@@ -1,25 +1,34 @@
-#include <unistd.h>
+#include <stdio.h>
 
 void	ft_putnbr(int nb);
 
 int	main(void)
 {
+	printf("Input : -2147463648\n\n");
 	ft_putnbr(-2147463648);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : -10000\n\n");
 	ft_putnbr(-10000);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : -42\n\n");
 	ft_putnbr(-42);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : -1\n\n");
 	ft_putnbr(-1);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : 0\n\n");
 	ft_putnbr(0);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : 1\n\n");
 	ft_putnbr(1);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : 42\n\n");
 	ft_putnbr(42);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : 10000\n\n");
 	ft_putnbr(10000);
-	write(1, "\n", 1);
-	ft_putnbr(2147483647);
-	write(1, "\n", 1);
+	printf("\n\n----------\n\n");
+	printf("Input : 2147463647\n\n");
+	ft_putnbr(2147463647);
+	printf("\n\n----------\n\n");
 }
