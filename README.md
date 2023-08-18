@@ -16,5 +16,3 @@ This repo is, for now, here mostly for the test !
 This repo will be updated when I'll start 42, with my scores and stuff !
 
 Feel free to create pull requests and issues, I'll be happy to merge/fix them !
-
-And more important : copying code from Github without understanding it.... it's lame.
