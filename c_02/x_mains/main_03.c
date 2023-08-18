@@ -9,9 +9,9 @@ int	main(void)
 	char *str3 = "w564783920";
 	char str4[0]; 
 	
-	printf("Result is supposed to be 1.\nResult : %i\n", ft_str_is_numeric(str1));
-	printf("Result is supposed to be 0.\nResult : %i\n", ft_str_is_numeric(str2));
-	printf("Result is supposed to be 0.\nResult : %i\n", ft_str_is_numeric(str3));
-	printf("Result is supposed to be 1.\nResult : %i\n", ft_str_is_numeric(str4));
+	printf("Full number string is supposed to be 1.\nResult : %i\n", ft_str_is_numeric(str1));
+	printf("Letter at the end is supposed to be 0.\nResult : %i\n", ft_str_is_numeric(str2));
+	printf("Letter at start is supposed to be 0.\nResult : %i\n", ft_str_is_numeric(str3));
+	printf("Empty string is supposed to be 1.\nResult : %i\n", ft_str_is_numeric(str4));
 
 }

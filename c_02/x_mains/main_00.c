@@ -4,12 +4,26 @@ char *ft_strcpy(char *dest, char *src);
 
 int	main(void)
 {
-	char *src = "Salut bande de salopes";
-	char dest[50];
+	char *src = "Yeah, I have a lot of questions. First of all: How dare you?";
+	char dest[80]; // This is the DESTINATION buffer, which NEEDS to be larger than the SOURCE buffer.
 
-	ft_strcpy(dest, src);	
+
+	printf("String to be copied :\n\n%s\n", src);
+	printf("\n----------\n\n");
+
+	  //////////////////////////////////////////
+	 //         FUNCTION    EXECUTION        //
+	//////////////////////////////////////////
+
+
+				ft_strcpy(dest, src);	
+			
+				
+	  //////////////////////////////////////////
+	 //         END    EXECUTION             //
+	//////////////////////////////////////////
 	
-	for (int i = 0; dest[i] != '\0'; i++)
-		printf("%c", dest[i]);
+	
+	printf("Destination buffer :\n\n%s", dest);
 
 }

@@ -9,9 +9,9 @@ int	main(void)
 	char *str3 = "TRYFUGHJK0";
 	char str4[0]; 
 	
-	printf("Result is supposed to be 1.\nResult : %i\n", ft_str_is_uppercase(str1));
-	printf("Result is supposed to be 0.\nResult : %i\n", ft_str_is_uppercase(str2));
-	printf("Result is supposed to be 0.\nResult : %i\n", ft_str_is_uppercase(str3));
-	printf("Result is supposed to be 1.\nResult : %i\n", ft_str_is_uppercase(str4));
+	printf("Full uppercase is supposed to be 1.\nResult : %i\n", ft_str_is_uppercase(str1));
+	printf("One lowercase is supposed to be 0.\nResult : %i\n", ft_str_is_uppercase(str2));
+	printf("One number is supposed to be 0.\nResult : %i\n", ft_str_is_uppercase(str3));
+	printf("Empty string is supposed to be 1.\nResult : %i\n", ft_str_is_uppercase(str4));
 
 }
