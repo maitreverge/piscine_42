@@ -8,7 +8,7 @@ int	main(void)
 
 	// Pointers declarations
 
-	int *nbr1 = &i; // First pointer takes it's adress
+	int *nbr1 = &i; // First pointer takes i's adress
 	int **nbr2 = &nbr1; // second pointer takes nbr1's adress
 	int ***nbr3 = &nbr2; // and so on...
 	int ****nbr4 = &nbr3;

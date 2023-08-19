@@ -15,11 +15,10 @@ int	main(int argc, char **argv)
 	printf("%i\n", result);
 	for (int i = 0; i < (max - min); i++)
 	{
-		printf("%i", range[i]);
-		printf(" ,");
+		printf("%i  ", range[i]);
 	}
 	free(range);
 	}
 	else
-		return (1);
+		printf("Usage :		<your_program_name>		<min_number>	<max_number>	\n\nExample :	a.out 4 12\n");
 }
