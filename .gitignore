@@ -7,6 +7,10 @@
 *.obj
 *.elf
 
+# Assembly related output
+*.i
+*.s
+
 # Linker output
 *.ilk
 *.map
