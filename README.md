@@ -1,4 +1,4 @@
-# Piscine_42
+<h1 align="center">Piscine_42</h1>
 
 Here is my repo of all my exercices and tests related to the 42 piscine.
 
