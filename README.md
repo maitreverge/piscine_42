@@ -1,6 +1,13 @@
 <h1 align="center">Piscine_42</h1>
 
-Here is my repo of all my exercices and tests related to the 42 piscine.
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+This repo is a snapshot of my piscine, during July 2023 at 42 Perpignan.
+
+The "Piscine" is a selection test of 4 weeks, consisting in learning basic CS skills such as using a VSC such as Git, basic shell commands and scripting and of course good old C Language.
+
+
+My log time was a bit distorded for various network reasons. My log time was between 10 and 12h a day.
 
 Thoses directories contains tests I wrote myself (for the most part).
 
