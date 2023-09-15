@@ -19,6 +19,7 @@ int	main(void)
 
 
 				ft_div_mod(a, b, &div, &mod);
+				
 				/*
 
 				Same as previous exercice, I pluged the adresses of variables DIV and MOD straight into

@@ -6,9 +6,7 @@ int	main(void)
 {
 	int i = 21;
 
-	printf("Value of i before function : %i\n", i);
-	printf("\n----------\n\n");
-
+	printf("Value of i before function : %i\n\n----------\n\n", i);
 
 	  //////////////////////////////////////////
 	 //         FUNCTION    EXECUTION        //

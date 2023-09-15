@@ -11,7 +11,5 @@ int main(void)
     char    **result = ft_split(str, charset);
 
     for(int i = 0; result[i]; i++)
-    {
         printf("Result[%i] = %s\n\n-----\n", result[i]);
-    }
 }

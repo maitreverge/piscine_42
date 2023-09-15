@@ -12,7 +12,5 @@ int	main(int ac, char **av)
 		// You obviously need to enter 2 numbers in this program !
 	}
 	else
-	{
 		printf("Usage :		<your_program_name>		<number>	<power>\n\nExample :	a.out 4 5\n");
-	}
 }

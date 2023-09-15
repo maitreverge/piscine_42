@@ -18,8 +18,7 @@ int	main(void)
 	int ********nbr8 = &nbr7;
 	int *********nbr9 = &nbr8;
 
-	printf("Value of i before function : %i\n", i);
-	printf("\n----------\n\n");
+	printf("Value of i before function : %i\n\n----------\n\n", i);
 
 	  //////////////////////////////////////////
 	 //         FUNCTION    EXECUTION        //
