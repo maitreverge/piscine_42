@@ -4,7 +4,7 @@ This repo is a global snapshot of my piscine, during July 2023 at 42 Perpignan.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-The "Piscine" is a 4 weeks admission test , consisting in learning basic CS skills such as using a VSC, Shell commands and scripting and of course good old C.
+The "Piscine" is a 4 weeks admission test , consisting in learning basic CS skills such as using a VCS, Shell commands and scripting and of course good old C.
 
 Despite being distorded by various reasons (and because I forgot to logout), my log time was on average between 10 and 12h per day.
 
