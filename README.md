@@ -6,17 +6,17 @@ This repo is a global snapshot of my piscine, during July 2023 at 42 Perpignan.
 
 The "Piscine" is a 4 weeks admission test , consisting in learning basic CS skills such as using a VSC, Shell commands and scripting and of course good old C.
 
-My log time was a bit distorded for various network reasons. My log time was between 10 and 12h a day.
+Despite being distorded by various reasons (and because I forgot to logout), my log time was on average between 10 and 12h per day.
 
-Thoses directories contains tests I wrote myself (for the most part).
+<p align="center">
+  <img src="/img_src/log_time.jpeg" alt="Alt Text">
+</p>
 
-// DISCLAIMER //
+I ended up with level 9.
 
-From now, do not rely much on the exercices themselves, as they didn't went through the moulinette !
+I did from c_00 to c_08, boths shells and all rushes. Did not make BSQ.
 
-This repo is, for now, here mostly for the test !
+<p align="center">
+  <img src="/img_src/level.jpeg" alt="Alt Text">
+</p>
 
-
-This repo will be updated when I'll start 42, with my scores and stuff !
-
-Feel free to create pull requests and issues if you see something that can be improved, I'll be happy to merge/fix them !
