@@ -3,22 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/20 18:50:32 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/20 18:54:59 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/18 17:26:20 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/20 10:57:06 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-unsigned int	ft_strlen(char *str)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
@@ -26,13 +16,45 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	unsigned int	j;
 
 	i = 0;
-	j = ft_strlen(dest);
-	while (i < nb && src[i] != '\0')
-	{
-		dest[j] = src[i];
+	j = 0;
+	while (dest[i])
 		i++;
+	while (src[j] && j < nb)
+	{
+		dest[i + j] = src[j];
 		j++;
 	}
-	dest[j] = '\0';
+	dest[i + j] = '\0';
 	return (dest);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+
+char	*ft_strncat(char *dest, char *src, unsigned int nb);
+
+int	main(void)
+{
+	char src1[] = "bande de coquines";
+	char ft_dest1[50] = "Salut";
+	char dest1[50] = "Salut";
+	unsigned int len1 = 6;
+
+	printf("Valeur de src :\n%s\n\n", src1);
+
+	printf("\n//////////////////////////\n");
+	printf("\n//		Execution fonction\n");
+	printf("\n//////////////////////////\n\n");
+
+	///////////////////////////////
+	// APPEL FONCTIONS
+	//////////////////////////////
+	ft_strncat(ft_dest1, src1, len1);
+	strncat(dest1, src1, len1);
+	/////////////////////////////
+
+	printf("Resultat de ma fonction ft_strcat = \n%s\n", ft_dest1);
+	printf("Resultat de la fonction strcat = \n%s\n", dest1);
+	printf("\n--------------------------\n");
+}
+*/

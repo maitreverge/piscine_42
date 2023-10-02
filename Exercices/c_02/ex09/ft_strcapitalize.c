@@ -3,36 +3,44 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/19 20:07:45 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/19 20:36:46 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/16 16:56:59 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/20 08:55:12 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ch_an(char c)
-{
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
-		|| (c >= '0' && c <= '9'))
-		return (0);
-	else
-		return (1);
-}
-
-int	ch_low(char c)
+int	is_lower(char c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (0);
-	else
 		return (1);
+	else
+		return (0);
 }
 
-int	ch_up(char c)
+int	is_upper(char c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return (0);
-	else
 		return (1);
+	else
+		return (0);
+}
+
+int	is_alpha_num(char c)
+{
+	if ((is_lower(c) == 1) || (is_upper(c) == 1) || (c >= '0' && c <= '9'))
+		return (1);
+	else
+		return (0);
+}
+
+int	is_space(char c)
+{
+	if (c == '\f' || c == '\n' || c == '\r'
+		|| c == '\t' || c == '\v' || c == ' ')
+		return (1);
+	else
+		return (0);
 }
 
 char	*ft_strcapitalize(char *str)
@@ -40,15 +48,55 @@ char	*ft_strcapitalize(char *str)
 	int	i;
 
 	i = 0;
+	if (str[0] != '\0' && is_lower(str[0]) == 1)
+		str[0] -= 32;
+	i++;
 	while (str[i] != '\0')
 	{
-		if (ch_low(str[0]) == 0)
-			str[0] -= 32;
-		if (ch_an(str[i -1]) == 0 && ch_up(str[i]) == 0)
-			str[i] += 32;
-		if (ch_an(str[i -1]) == 1 && ch_low(str[i]) == 0)
+		if (is_alpha_num(str[i - 1]) == 1 && is_upper(str[i]) == 1)
+			str[i] = 32;
+			// str[i] = str[i] + 32
+		if (is_space(str[i - 1]) == 1 && is_lower(str[i]) == 1)
+			str[i] -= 32;
+		if ((str[i -1] == '+' || str[i - 1] == '-') && is_lower(str[i]) == 1)
 			str[i] -= 32;
 		i++;
 	}
 	return (str);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char str1[] = "ceCi ESt unE phRASe RanDom";
+	char str2[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+	char str3[] = "ceci est une phrase random";
+	char str4[] = "+--+ceCci-eSt             uNEpPHRASe-rANdom";
+
+
+	printf("Test 1 avant fonction : \n%s\n\n", str1);
+	printf("Test 2 avant fonction : \n%s\n\n", str2);
+	printf("Test 3 avant fonction : \n%s\n\n", str3);
+	printf("Test 4 avant fonction : \n%s\n\n", str4);
+
+	///////////////////////////
+	// APPEL FONCTIONS DANS LES PRINTF
+	///////////////////////////
+	char *result1 = ft_strcapitalize(str1);
+	char *result2 = ft_strcapitalize(str2);
+	char *result3 = ft_strcapitalize(str3);
+	char *result4 = ft_strcapitalize(str4);
+	//////////////////////////
+	printf("\n/////////////////////\n");
+	printf("/// EXECUTION FONCTION");
+	printf("\n/////////////////////\n\n");
+
+	printf("Test 1 apres fonction : \n%s\n\n", result1);
+	printf("Test 2 apres fonction : \n%s\n\n", result2);
+	printf("Test 3 apres fonction : \n%s\n\n", result3);
+	printf("Test 4 apres fonction : \n%s\n\n", result4);
+
+	printf("\n-------------\n");
+}
+*/

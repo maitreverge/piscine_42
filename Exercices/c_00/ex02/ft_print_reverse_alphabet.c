@@ -3,23 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/17 18:55:18 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/17 18:56:39 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/12 14:33:15 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/12 14:36:14 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
+}
+
 void	ft_print_reverse_alphabet(void)
 {
-	char	c;
+	char	letter;
 
-	c = 'z';
-	while (c >= 'a')
+	letter = 'z';
+	while (letter >= 'a')
 	{
-		write(1, &c, 1);
-		c--;
+		ft_putchar(letter);
+		letter--;
 	}
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/20 13:51:16 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/20 14:28:56 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/17 10:11:01 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/17 11:17:34 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,48 +17,48 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int	ft_strlen(char *str)
+int	is_non_print(char c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-int	check_np(char c)
-{
-	if (c >= 0 && c <= 31)
-		return (0);
-	else
+	if ((c >= 0 && c < 32) || c == 127)
 		return (1);
+	else
+		return (0);
 }
 
 void	ft_putstr_non_printable(char *str)
 {
 	int	i;
-	int	div;
-	int	mod;
 
 	i = 0;
-	div = 0;
-	mod = 0;
-	if (ft_strlen(str) > 0)
+	while (str[i] != '\0')
 	{
-		while (str[i] != '\0')
+		if (is_non_print(str[i]) == 1)
 		{
-			if (check_np(str[i]) == 0)
-			{
-				div = str[i] / 16;
-				mod = str[i] % 16;
-				ft_putchar('\\');
-				ft_putchar("0123456789abcdef" [div]);
-				ft_putchar("0123456789abcdef" [mod]);
-			}
-			else
-				ft_putchar(str[i]);
+			ft_putchar('\\');
+			ft_putchar("0123456789abcdef" [str[i] / 15]);
+			ft_putchar("0123456789abcdef" [str[i] % 15]);
 			i++;
 		}
+		ft_putchar(str[i]);
+		i++;
 	}
 }
+/*
+#include <stdio.h>
+
+void	ft_putstr_non_printable(char *str);
+
+int	main(void)
+{
+	char str[] = "Coucou\ntu vas bien? ";
+
+	printf("Test 1 avant fonction : \n%s\n\n", str);
+
+	///////////////////////////
+	// APPEL FONCTIONS DANS LES PRINTF
+	//////////////////////////
+	ft_putstr_non_printable(str);
+
+	printf("\n-------------\n");
+}
+*/

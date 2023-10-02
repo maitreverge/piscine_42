@@ -3,43 +3,59 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/26 12:44:23 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/26 13:05:09 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/26 09:03:28 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/27 11:43:27 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	*allocate(int min, int len, int *buffer)
+int	*ft_range(int min, int max)
 {
 	int	i;
+	int	range;
+	int	*master_tab;
 
+	if (min >= max)
+		return (0);
 	i = 0;
-	while (i < len)
+	range = max - min;
+	master_tab = (int *)malloc(sizeof(int) * range);
+	if (!master_tab)
+		return (0);
+	while (i <= range - 1)
 	{
-		buffer[i] = min;
+		master_tab[i] = min;
 		i++;
 		min++;
 	}
-	return (buffer);
+	return (master_tab);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int	*ft_range(int min, int max)
+int	*ft_range(int min, int max);
+
+int	main(int argc, char **argv)
 {
-	int	len;
-	int	*buffer;
-
-	if (min < max)
+	char	*str = "Usage :     ./a.out     min       max";
+	if (argc == 3)
 	{
-		len = max - min;
-		buffer = (int *)malloc(sizeof(int) * len);
-		if (buffer == NULL)
-			exit (1);
-		allocate(min, len, buffer);
-		return (buffer);
+		int min = atoi(argv[1]);
+		int max = atoi(argv[2]);
+		int *result = ft_range(min, max);
+
+		printf("Resultat = ");
+		for (int i = 0; i < max - min; i++)
+			printf("%i / ", result[i]);
+
+		free(result);
 	}
 	else
-		return (NULL);
+		printf("%s\n", str);
 }
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/17 19:18:43 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/17 19:21:10 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/12 14:42:25 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/12 14:53:15 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,12 @@ void	ft_putchar(char c)
 
 void	ft_is_negative(int n)
 {
-	if (n >= 0)
-		ft_putchar('P');
-	else
+	if (n < 0)
+	{
 		ft_putchar('N');
+	}
+	else
+	{
+		ft_putchar('P');
+	}
 }

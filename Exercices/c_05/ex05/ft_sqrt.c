@@ -3,23 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/25 10:53:23 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/25 11:35:59 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/24 15:26:19 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/24 17:18:04 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
-	int	i;
+	int	min;
+	int	max;
+	int	middle;
+	int	square;
 
-	i = 0;
-	while (i * i <= nb)
+	min = 0;
+	max = 46341;
+	middle = 0;
+	while (1)
 	{
-		if (i * i == nb)
-			return (i);
-		i++;
+		middle = ((max + min) / 2);
+		square = middle * middle;
+		if (middle == min)
+			return (0);
+		if (square == nb)
+			return (middle);
+		if (square > nb)
+			max = middle;
+		if (square < nb)
+			min = middle;
 	}
-	return (0);
 }

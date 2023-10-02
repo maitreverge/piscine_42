@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/26 10:38:00 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/26 11:07:24 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/25 17:05:06 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/27 11:42:34 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ int	ft_strlen(char *str)
 
 	i = 0;
 	while (str[i] != '\0')
+	{
 		i++;
+	}
 	return (i);
 }
 
@@ -38,11 +40,33 @@ char	*ft_strcpy(char *dest, char *src)
 
 char	*ft_strdup(char *src)
 {
-	char	*copy;
+	char	*result;
+	int		len_src;
 
-	copy = (char *)malloc(sizeof(char) * ft_strlen(src) + 1);
-	if (copy == NULL)
-		exit (1);
-	ft_strcpy(copy, src);
-	return (copy);
+	len_src = ft_strlen(src);
+	result = (char *) malloc(len_src + 1);
+	if (!result)
+		return (0);
+	return (ft_strcpy(result, src));
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+char	*ft_strdup(char *src);
+
+int	main(void)
+{
+	char	*src = "Salut bande de coquines"; // len = 23 with '\0'
+
+	char	*ft_dest = ft_strdup(src);
+	char	*dest = strdup(src);
+
+	printf("My ft_strdup = %s\n----------\n", ft_dest);
+	printf("Real strdup = %s\n----------\n", dest);
+
+	free(ft_dest);
+	free(dest);
+}
+*/

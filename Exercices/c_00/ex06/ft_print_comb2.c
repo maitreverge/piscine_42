@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/18 11:05:02 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/18 11:44:13 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/12 15:32:44 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/12 17:36:28 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,49 +17,49 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	display(char n1, char n2, char n3, char n4)
+void	display(char n1_1, char n1_2, char n2_1, char n2_2)
 {
-	while (n4 <= '9')
+	while (n2_2 <= '9')
 	{
-		if (((n1 * 10) + n2) < ((n3 * 10) + n4))
+		if (((n1_1 * 10) + n1_2) < ((n2_1 * 10) + n2_2))
 		{
-			ft_putchar(n1);
-			ft_putchar(n2);
+			ft_putchar(n1_1);
+			ft_putchar(n1_2);
 			ft_putchar(' ');
-			ft_putchar(n3);
-			ft_putchar(n4);
-			if (!(n1 == '9' && n2 == '8' && n3 == '9' && n4 == '9'))
+			ft_putchar(n2_1);
+			ft_putchar(n2_2);
+			if (!(n1_1 == '9' && n1_2 == '8' && n2_1 == '9' && n2_2 == '9'))
 			{
 				ft_putchar(',');
 				ft_putchar(' ');
 			}
 		}
-		n4++;
+		n2_2++;
 	}
 }
 
 void	ft_print_comb2(void)
 {
-	char	n1;
-	char	n2;
-	char	n3;
-	char	n4;
+	char	n1_1;
+	char	n1_2;
+	char	n2_1;
+	char	n2_2;
 
-	n1 = '0';
-	while (n1 <= '9')
+	n1_1 = '0';
+	while (n1_1 <= '9')
 	{
-		n2 = '0';
-		while (n2 <= '9')
+		n1_2 = '0';
+		while (n1_2 <= '9')
 		{
-			n3 = '0';
-			while (n3 <= '9')
+			n2_1 = '0';
+			while (n2_1 <= '9')
 			{
-				n4 = '0';
-				display(n1, n2, n3, n4);
-				n3++;
+				n2_2 = '0';
+				display(n1_1, n1_2, n2_1, n2_2);
+				n2_1++;
 			}
-		n2++;
+			n1_2++;
 		}
-	n1++;
+		n1_1++;
 	}
 }

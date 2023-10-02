@@ -3,45 +3,70 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/26 13:09:28 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/26 14:05:30 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/26 09:54:17 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/27 11:45:12 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	*allocate(int min, int len, int **range)
+int	ft_ultimate_range(int **range, int min, int max)
 {
 	int	i;
+	int	range_of_tab;
+	int	*master_tab;
 
-	i = 0;
-	while (i < len)
+	if (min >= max)
 	{
-		(*range)[i] = min;
+		*range = 0;
+		return (0);
+	}
+	range_of_tab = max - min;
+	master_tab = (int *)malloc(sizeof(int) * range_of_tab);
+	if (!master_tab)
+		return (-1);
+	i = 0;
+	while (i <= range_of_tab - 1)
+	{
+		master_tab[i] = min;
 		i++;
 		min++;
 	}
-	return (*range);
+	*range = master_tab;
+	return (range_of_tab);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int	ft_ultimate_range(int **range, int min, int max)
+int	ft_ultimate_range(int **range, int min, int max);
+
+int	main(int argc, char **argv)
 {
-	int	len;
-
-	if (min < max)
+	char	*str = "Usage :     ./a.out     min       max";
+	if (argc == 3)
 	{
-		len = max - min;
-		*range = (int *)malloc(sizeof(int) * len);
-		if (*range == NULL)
-			return (-1);
-		allocate(min, len, range);
-		return (len);
+		int result;
+		int min = atoi(argv[1]);
+		int max = atoi(argv[2]);
+		int *range;
+		int **turbo_pointeur = &range;
+
+		//////
+		result = ft_ultimate_range(turbo_pointeur, min, max);
+
+		printf("\n\nContenu tableau apres fonction  = ");
+		for (int i = 0; i < max - min; i++)
+			printf("%i / ", range[i]);
+		printf("\n\nResultat suppose = %i\nVrai resultat = %i", max - min, result);
+
+
+		free(range);
 	}
 	else
-	{
-		*range = NULL;
-		return (0);
-	}
+		printf("%s\n", str);
 }
+*/

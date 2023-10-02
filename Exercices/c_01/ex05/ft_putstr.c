@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/19 14:18:27 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/19 14:22:20 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/14 11:05:13 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/15 18:39:18 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,14 @@ void	ft_putstr(char *str)
 		i++;
 	}
 }
+/*
+#include <stdio.h>
+
+void	ft_putstr(char *str);
+
+int	main(void)
+{
+	char *string = "Salut bande de coquines";
+	ft_putstr(string);
+}
+*/

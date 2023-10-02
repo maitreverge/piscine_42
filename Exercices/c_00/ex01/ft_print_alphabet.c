@@ -3,23 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/17 18:49:47 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/17 18:53:24 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/12 14:26:22 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/12 14:30:15 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_print_alphabet(void)
 {
-	char	c;
+	char	letter;
 
-	c = 'a';
-	while (c <= 'z')
+	letter = 'a';
+	while (letter <= 'z')
 	{
-		write(1, &c, 1);
-		c++;
+		ft_putchar(letter);
+		letter++;
 	}
 }

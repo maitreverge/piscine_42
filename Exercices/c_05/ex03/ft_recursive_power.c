@@ -3,22 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_recursive_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/25 09:45:02 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/25 10:43:28 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/24 14:36:12 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/26 11:27:53 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_recursive_power(int nb, int power)
 {
-	int	result;
+	int	r;
 
-	result = 1;
-	if (power < 0)
-		return (0);
+	r = nb;
+	while (power > 1)
+	{
+		return (nb * ft_recursive_power(nb, (power - 1)));
+	}
 	if (power == 0)
 		return (1);
-	else
-		return (result * nb * ft_recursive_power(nb, power - 1));
+	if (power < 0)
+		return (0);
+	return (r);
 }

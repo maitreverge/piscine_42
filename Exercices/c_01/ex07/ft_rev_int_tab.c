@@ -3,31 +3,62 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fverge <fverge@student.42.fr>              +#+  +:+       +#+        */
+/*   By: flverge <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/19 14:35:53 by fverge            #+#    #+#             */
-/*   Updated: 2023/06/19 14:57:40 by fverge           ###   ########.fr       */
+/*   Created: 2023/07/15 17:47:26 by flverge           #+#    #+#             */
+/*   Updated: 2023/07/15 18:40:33 by flverge          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_rev_int_tab(int *tab, int size)
+void	ft_swap(int *a, int *b)
 {
-	int	i;
-	int	j;
 	int	temp;
 
-	i = 0;
-	j = size - 1;
-	temp = 0;
-	if (size > 1)
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void	ft_rev_int_tab(int *tab, int size)
+{
+	int	start;
+	int	end;
+
+	start = 0;
+	end = size - 1;
+	while (start < end)
 	{
-		while (i < j)
-		{
-			temp = tab[i];
-			tab[i] = tab[j];
-			tab[j] = temp;
-			i++;
-			j--;
-		}
+		ft_swap(&tab[start], &tab[end]);
+		start++;
+		end--;
 	}
 }
+/* #include <stdio.h>
+
+int	main(void)
+{
+	int tab[] = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+	int size = sizeof(tab) / 4;
+
+
+	printf("Valeurs du tableau de int avant fonction :\n");
+	for(int i = 0; i < size; i++)
+	{
+		printf("%d / ", tab[i]);
+	}
+
+	///////////////////////
+	// 		EXECUTION FONCTION
+	ft_rev_int_tab(tab, size);
+	//////////////////////
+
+	printf("\n\n////////////////////////\n");
+	printf("//////// EXECUTION FONCTION \n");
+	printf("////////////////////////\n\n");
+	printf("Valeurs du tableau de int :\n");
+	for(int i = 0; i < size; i++)
+	{
+		printf("%d / ", tab[i]);
+	}
+}
+*/
