@@ -1,0 +1,77 @@
+###################### GIT BRANCHES ##############################
+
+
+Avant de commencer a travailler, on s'assure d'etre sur notre branche !
+
+>>>>> Louis, chef d'equipe = master
+>>>>> Romain = romain_branch
+>>>>> Florian = florian_branch
+
+################# TRAVAILLER AU BON ENDROIT ####################
+
+Pour se mettre sur sa branche :
+
+git switch master = aller sur la branche de louis
+
+git switch romain_branch = aller sur la branche de Romain
+
+git switch florian_branch = aller sur la branche de Romain
+
+
+On doit s'assurer d'etre sur notre branche avant de commit et de push, sinon on cherchera
+a travailler a deux sur un meme fichier !
+
+
+Quelques commandes :
+
+
+git branch = Voir les branches
+
+git switch -c nouvelle_branche = creer ET switch sur une nouvelle branche nommee nouvelle_branche
+
+
+
+######### RECUPERER LE TRAVAIL DES AUTRES ###############
+
+
+Pour se "synchroniser", a savoir recuperer les fichiers des autres sur les autres branches que la notre
+on va utiliser git fetch
+
+git fetch origin master ==> Recuperer les push de Louis ( LOUIS N'UTILISE PAS CETTE COMMANDE)
+
+
+git fetch origin romain_branch ==> recuperer les pushs de Romain (ROMAIN N'UTILISE PAS CETTE COMMANDE)
+
+
+git fetch origin florian_branch ==> recuperer les pushs de Florian (FLORIAN, N'UTILISE PAS CETTE COMMANDE).
+
+###################################################
+
+RESUME
+
+###################################################
+
+Etape 1 : Se mettre sur sa branche.
+
+Etape 2 : coder, git add, git commit et git push DEPUIS SA BRANCHE, TRES IMPORTANT
+
+Etape 3 : Recuperer le travail des autres avec git fetch origin + la_branche 
+
+Etape 4 : La commande git Pull nous servira a fusionner notre travail, c'est pour plus tard !
+
+######################################################
+Consulter le travail des autres
+######################################################
+
+Etape 1 : etre sur sa branche
+
+Etape 2 : git fetch origin + la branche que l'on veut consulter (pour etre a jour)
+
+Etape 3 : git switch + la branche a verifier
+
+Une fois sur la branche du collegue, si on run la commande LS, nous seront sur sa branche, et donc nos fichier de notre brance auront "disparus", car nous ne sommes plus sur notre propre branche.
+
+Pour revenir et continuer a travailler sur sa branche : git switch sa_branche
+
+NE JAMAIS TRAVAILLER SUR LA BRANCHE DES AUTRES, SINON CA VA ETRE LE BORDEL !!
+
