@@ -1,11 +1,10 @@
 <h1 align="center">Piscine_42</h1>
 
+This repo is a global snapshot of my piscine, during July 2023 at 42 Perpignan.
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-This repo is a snapshot of my piscine, during July 2023 at 42 Perpignan.
-
-The "Piscine" is a selection test of 4 weeks, consisting in learning basic CS skills such as using a VSC such as Git, basic shell commands and scripting and of course good old C Language.
-
+The "Piscine" is a 4 weeks admission test , consisting in learning basic CS skills such as using a VSC, Shell commands and scripting and of course good old C.
 
 My log time was a bit distorded for various network reasons. My log time was between 10 and 12h a day.
 
