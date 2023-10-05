@@ -30,9 +30,32 @@ Here is a quick summary of each block, each one consisting in learning a global 
 | :---: | :---: |
 | <img src="img_src/grades/0.jpeg" /> | <img src="img_src/grades/85.jpeg" /> |
 
-| Moulinette grade |
-| :---: |
-| <img src="img_src/moulinette/give_up.jpeg" /> |
-| <img src="img_src/moulinette/shell_00_m.png" /> |
+
+|  | Moulinette Grade |
+| :---: | :---: |
+| 1st Try | <img src="img_src/moulinette/give_up.jpeg" width="50%" /> |
+| 2nd Try | <img src="img_src/moulinette/shell_00_m.png" /> |
+
+
+shell_00 is all about discovering basic shell commands and getting familiar with it, ssh printing, and exploring authorisations.
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+<h2 align="center">shell_01</h2>
+
+| 1st Try | 2nd Try | 3rd Try | 4th Try |
+| :---: | :---: | :---: | :---: |
+| <img src="img_src/grades/0.jpeg" /> | <img src="img_src/grades/30.jpeg" /> |  <img src="img_src/grades/0.jpeg" /> |  <img src="img_src/grades/70.jpeg" /> |
+
+
+|  | Moulinette Grade |
+| :---: | :---: |
+| 1st Try | <img src="img_src/moulinette/give_up.jpeg" width="50%" /> |
+| 2nd Try | <img src="img_src/moulinette/shell_01_m1.jpeg" /> |
+| 3rd Try | <img src="img_src/moulinette/give_up.jpeg" width="50%" /> |
+| 4th Try | <img src="img_src/moulinette/shell_01_m2.jpeg" /> |
+
+shell_01 is all about diging into advanced shell commands, exploring piping and scripting possibilities. 
+
 
 shell_00 is all about discovering basic shell commands and getting familiar with it, ssh printing, and exploring authorisations.
