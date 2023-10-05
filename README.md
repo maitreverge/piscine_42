@@ -92,10 +92,8 @@ c_01 is crucial. We learnt about pointers, arrays, and understanding the concept
 <h2 align="center">c_02</h2>
 
 | 1st Try | 2nd Try | 3rd Try |
-| :---: |
-| <img src="img_src/grades/0.jpeg" /> |
-| <img src="img_src/grades/5.jpeg" /> |
-| <img src="img_src/grades/55.jpeg" /> |
+| :---: | :---: | :---: |
+| <img src="img_src/grades/0.jpeg" /> | <img src="img_src/grades/5.jpeg" width="80%" /> | <img src="img_src/grades/55.jpeg" /> |
 
 
 |  | Moulinette Grade |
@@ -111,10 +109,8 @@ c_02 is a module dedicated to strings.
 <h2 align="center">c_03</h2>
 
 | 1st Try | 2nd Try | 3rd Try |
-| :---: |
-| <img src="img_src/grades/30.jpeg" /> |
-| <img src="img_src/grades/0.jpeg" /> |
-| <img src="img_src/grades/75.jpeg" /> |
+| :---: | :---: | :---: |
+| <img src="img_src/grades/30.jpeg" width="80%" /> | <img src="img_src/grades/0.jpeg" /> | <img src="img_src/grades/75.jpeg" /> |
 
 
 |  | Moulinette Grade |
@@ -147,10 +143,8 @@ c_04 is also manipulating strings, with a major challenge of your piscine : ft_a
 <h2 align="center">c_05</h2>
 
 | 1st Try | 2nd Try | 3rd Try |
-| :---: |
-| <img src="img_src/grades/20.jpeg" /> |
-| <img src="img_src/grades/10.jpeg" /> |
-| <img src="img_src/grades/55.jpeg" /> |
+| :---: | :---: | :---: |
+| <img src="img_src/grades/20.jpeg" width="80%" /> | <img src="img_src/grades/10.jpeg" width="80%" /> | <img src="img_src/grades/55.jpeg" /> |
 
 
 |  | Moulinette Grade |
@@ -166,9 +160,8 @@ c_05 is an introduction to recursive programing through maths functions.
 <h2 align="center">c_06</h2>
 
 | 1st Try | 2nd Try |
-| :---: |
-| <img src="img_src/grades/0.jpeg" /> |
-| <img src="img_src/grades/100.jpeg" /> |
+| :---: | :---: |
+| <img src="img_src/grades/0.jpeg" /> | <img src="img_src/grades/100.jpeg" /> |
 
 
 |  | Moulinette Grade |
@@ -198,9 +191,8 @@ c_07 is understanding memory management with malloc.
 <h2 align="center">c_08</h2>
 
 | 1st Try | 2nd Try |
-| :---: |
-| <img src="img_src/grades/1.jpeg" /> |
-| <img src="img_src/grades/100.jpeg" /> |
+| :---: | :---: |
+| <img src="img_src/grades/1.jpeg" width="80%" /> | <img src="img_src/grades/100.jpeg" /> |
 
 
 |  | Moulinette Grade |
