@@ -182,7 +182,7 @@ c_06 might be a short module, but we learn to use a very new syntax : argc and a
 
 |  | Moulinette Grade |
 | :---: | :---: |
-| 1st Try | <img src="img_src/moulinette/c_07_m.jpeg"  |
+| 1st Try | <img src="img_src/moulinette/c_07_m.jpeg" />  |
 
 c_07 is understanding memory management with malloc.
 
